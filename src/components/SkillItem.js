@@ -5,7 +5,7 @@ function SkillItem({ icon, label }) {
   return (
     <li className="flex flex-col gap-2 items-center">
       <FontAwesomeIcon icon={icon} className="text-6xl md:text-7xl" />
-      <span>{label}</span>
+      <span className="text-center">{label}</span>
     </li>
   );
 }

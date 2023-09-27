@@ -51,10 +51,10 @@ function SkillContainer({ title }) {
         isCore
           ? "bg-gradient-light"
           : "border border-[#FFD700] border-opacity-70"
-      } text-white px-20 py-16 rounded-2xl lg:p-28`}
+      } text-white px-20 py-16 rounded-2xl md:py-20 lg:p-24`}
     >
       <h3 className="text-center font-serif text-xl md:text-2xl lg:text-3xl">{title}</h3>
-      <ul className="grid h-full grid-cols-2 gap-x-16 gap-y-10 mt-10 lg:grid-cols-3">
+      <ul className="grid grid-cols-2 gap-x-16 gap-y-10 mt-10 lg:grid-cols-3">
         {icons.map((iconContainer, index) => (
           <SkillItem key={index} icon={iconContainer.icon} label={iconContainer.label} />
         ))}

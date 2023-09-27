@@ -20,7 +20,7 @@ body {
   height: 0.3rem; /* Adjust the height as needed */
   background-color: #cecece; /* Your desired line color */
   vertical-align: middle;
-  margin: 0 2rem; /* Adjust the margin as needed to space the line from the text */
+  margin: 0 1rem; /* Adjust the margin as needed to space the line from the text */
 }
 
 .text-gradient {
@@ -46,6 +46,7 @@ body {
 @media screen and (min-width: 480px) {
   .line-before-and-after {
     width: 10rem;
+    margin: 0 2rem;
   }
 }
 
