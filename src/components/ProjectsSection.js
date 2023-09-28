@@ -8,7 +8,7 @@ function ProjectsSection() {
   return (
     <section>
       <SectionTitle>PROJECTS</SectionTitle>
-      <div className="w-[85%] mx-auto flex flex-col gap-10 md:flex-row md:items-top md:justify-evenly">
+      <div className="w-[85%] mb-20 mx-auto flex flex-col gap-10 md:flex-row md:items-top md:justify-evenly">
         <div>
           <img
             className="w-full"
@@ -16,7 +16,7 @@ function ProjectsSection() {
             alt=""
           />
         </div>
-        <div className="text-primary flex flex-col gap-10 lg:gap-16">
+        <div className="text-primary flex flex-col gap-16 lg:gap-16">
           <div className="flex flex-col gap-2">
             <h3 className="text-primary text-5xl font-serif tracking-tighter">
               Personal Portfolio
@@ -33,7 +33,7 @@ function ProjectsSection() {
             <h4 className="text-3xl font-serif">Website Metrics</h4>
             <WebsiteMetricsList />
           </div>
-          <div className="text-primary text-center flex flex-col gap-5 md:flex-row lg:gap-10">
+          <div className="text-primary mt-5 text-center flex flex-col gap-6 items-center md:flex-row lg:gap-7">
             <Button variant="primary" href='https://www.google.com'>Explore Site</Button>
             <Button variant="secondary" href='https://www.google.com'>Source Code</Button>
           </div>

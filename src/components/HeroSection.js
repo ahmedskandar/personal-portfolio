@@ -15,7 +15,7 @@ function HeroSection() {
         alt="Dark background image displaying a mouse"
         className="w-full h-screen bg-cover bg-[100%] bg-fixed bg-no-repeat bg-[url('../public/assets/images/landing-page-bg.webp')]"
       >
-        <header className="relative flex flex-col gap-10 items-center justify-between pt-10 md:flex-row md:relative md:px-20">
+        <header className="relative flex flex-col gap-5 items-center justify-between md:flex-row md:relative md:px-20">
           <img
             src="/assets/images/MyLogo.jpg"
             className="w-40 h-40"
@@ -70,7 +70,7 @@ function HeroSection() {
         </div>
 
         <footer className="flex flex-col gap-5 justify-center items-center w-full absolute bottom-0 pb-10 px-20 md:gap-0 md:flex-row md:justify-start">
-          <div className="order-2 flex gap-5 text-lg md:text-xl lg:text-3xl lg:gap-8">
+          <div className="order-2 flex gap-5 text-3xl md:text-3xl lg:text-3xl lg:gap-8">
             <span>
               <a aria-label="Visit Ahmed's LinkedIn profile" href="google.com">
                 <FontAwesomeIcon icon={faLinkedin} />
@@ -82,7 +82,7 @@ function HeroSection() {
               </a>
             </span>
           </div>
-          <em className="text-md text-secondary order-1 md:absolute md:left-1/2 md:transform md:-translate-x-1/2 md:text-lg lg:text-xl">
+          <em className="text-lg text-secondary order-1 md:absolute md:left-1/2 md:transform md:-translate-x-1/2 md:text-xl lg:text-2xl">
             Elevating websites beyond design
           </em>
         </footer>
