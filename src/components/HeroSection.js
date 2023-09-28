@@ -56,13 +56,13 @@ function HeroSection() {
         </header>
 
         <div className="text-center w-full absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-[100%]">
-          <h1 className="font-serif text-primaryText text-5xl mb-2 sm:text-6xl md:text-7xl lg:text-8xl">
+          <h1 className="font-serif text-primary text-5xl mb-2 sm:text-6xl md:text-7xl lg:text-8xl">
             Ahmed Lukman
           </h1>
           <p className="font-mono font-bold tracking-wider text-gold text-lg sm:text-xl md:text-2xl lg:text-3xl">
             {text}
             {text !== "<FRONT END DEVELOPER />" && (
-              <span className="text-yellow-500">
+              <span className="text-yellow-600">
                 <Cursor cursorStyle="_" />
               </span>
             )}
@@ -82,7 +82,7 @@ function HeroSection() {
               </a>
             </span>
           </div>
-          <em className="text-md text-secondaryText order-1 md:absolute md:left-1/2 md:transform md:-translate-x-1/2 md:text-lg lg:text-xl">
+          <em className="text-md text-secondary order-1 md:absolute md:left-1/2 md:transform md:-translate-x-1/2 md:text-lg lg:text-xl">
             Elevating websites beyond design
           </em>
         </footer>

@@ -12,6 +12,25 @@ body {
   background: linear-gradient(to top, #0a0e14, #262c35);
 }
 
+.text-gold {
+  background: linear-gradient(
+    to bottom,
+    rgba(218, 165, 32),
+    #D6B680, /* Added color stop in the middle */
+    rgba(184, 134, 11)
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+.bg-gold {
+  background: linear-gradient(
+    to bottom,
+    rgba(218, 165, 32, 0.7),
+    rgba(184, 134, 11, 0.7)
+  );
+}
+
 /* SECTION HEADING STYLE */
 .line-before-and-after {
   content: "";
@@ -23,22 +42,7 @@ body {
   margin: 0 1rem; /* Adjust the margin as needed to space the line from the text */
 }
 
-.text-gold {
-  background: linear-gradient(
-    to bottom,
-    rgba(218, 165, 32),
-    rgba(184, 134, 11)
-  );  background-clip: text;
-  color: transparent;
-}
 
-.bg-gold {
-  background: linear-gradient(
-    to bottom,
-    rgba(218, 165, 32, 0.7),
-    rgba(184, 134, 11, 0.7)
-  );
-}
 
 /* Change these to rems later */
 /*  sm  */
@@ -66,7 +70,7 @@ body {
 
 @layer base {
   li a {
-    @apply text-secondaryText;
+    @apply text-secondary;
   }
   li a:hover {
     @apply text-gold;
@@ -74,9 +78,15 @@ body {
   }
 
   span a {
-    @apply text-secondaryText;
+    @apply text-secondary;
   }
   span a:hover {
     color: white;
+  }
+}
+
+@layer components {
+  .container {
+    @apply w-[75%] max-w-lg mx-auto
   }
 }

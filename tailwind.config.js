@@ -10,8 +10,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        primaryText: "white",
-        secondaryText: "#CECECE",
+        primary: "white",
+        secondary: "#CECECE",
       },
     },
   },
