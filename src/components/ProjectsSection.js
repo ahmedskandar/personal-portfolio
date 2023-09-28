@@ -16,7 +16,7 @@ function ProjectsSection() {
             alt=""
           />
         </div>
-        <div className="text-primary flex flex-col gap-16 lg:gap-16">
+        <div className="text-primary flex flex-col gap-10 lg:gap-16">
           <div className="flex flex-col gap-2">
             <h3 className="text-primary text-5xl font-serif tracking-tighter">
               Personal Portfolio
