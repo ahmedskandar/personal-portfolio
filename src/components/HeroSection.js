@@ -17,8 +17,8 @@ function HeroSection() {
       >
         <header className="relative flex flex-col gap-10 items-center justify-between pt-10 md:flex-row md:relative md:px-20">
           <img
-            src="/assets/images/logo.jpg"
-            className="w-24 h-24 rounded-full"
+            src="/assets/images/MyLogo.jpg"
+            className="w-40 h-40"
             alt="Ahmed Lukman's logo"
           />
           <nav
@@ -26,7 +26,7 @@ function HeroSection() {
             aria-label="Main navigation"
             className="md:absolute md:left-1/2 md:transform md:-translate-x-1/2"
           >
-            <ul className="text-md -trackingwider flex gap-10 md:text-lg md:gap-15 lg:text-xl lg:gap-20">
+            <ul className="text-md tracking-wider flex gap-10 md:text-lg md:gap-15 lg:text-xl lg:gap-20">
               <li>
                 <a href="google.com" aria-label="View Skills">
                   Skills
@@ -56,10 +56,10 @@ function HeroSection() {
         </header>
 
         <div className="text-center w-full absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-[100%]">
-          <h1 className="font-serif text-primary text-5xl mb-2 sm:text-6xl md:text-7xl lg:text-8xl">
+          <h1 className="font-serif text-primaryText text-5xl mb-2 sm:text-6xl md:text-7xl lg:text-8xl">
             Ahmed Lukman
           </h1>
-          <p className="font-mono tracking-wider text-gradient text-lg sm:text-xl md:text-2xl lg:text-3xl">
+          <p className="font-mono font-bold tracking-wider text-gold text-lg sm:text-xl md:text-2xl lg:text-3xl">
             {text}
             {text !== "<FRONT END DEVELOPER />" && (
               <span className="text-yellow-500">
@@ -82,7 +82,7 @@ function HeroSection() {
               </a>
             </span>
           </div>
-          <em className="text-md text-secondary order-1 md:absolute md:left-1/2 md:transform md:-translate-x-1/2 md:text-lg lg:text-xl">
+          <em className="text-md text-secondaryText order-1 md:absolute md:left-1/2 md:transform md:-translate-x-1/2 md:text-lg lg:text-xl">
             Elevating websites beyond design
           </em>
         </footer>

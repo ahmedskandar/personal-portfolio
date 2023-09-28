@@ -49,7 +49,7 @@ function SkillContainer({ title }) {
     <div
       className={`${
         isCore
-          ? "bg-gradient-light"
+          ? "bg-gold"
           : "border border-[#FFD700] border-opacity-70"
       } text-white px-20 py-16 rounded-2xl md:py-20 lg:p-24`}
     >

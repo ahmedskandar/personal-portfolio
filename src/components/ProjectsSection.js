@@ -3,7 +3,10 @@ import SectionTitle from './SectionTitle'
 
 function ProjectsSection() {
   return (
-    <SectionTitle>PROJECTS</SectionTitle>
+    <section>
+      <SectionTitle>PROJECTS</SectionTitle>
+    </section>
+
   )
 }
 
