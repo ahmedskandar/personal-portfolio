@@ -20,22 +20,22 @@ function ProjectItem({direction}) {
       </div>
       <div className="text-primary flex flex-col gap-10 lg:gap-14">
         <div className="flex flex-col gap-2">
-          <h3 className="text-primary text-4xl font-serif tracking-tighter lg:text-6xl">
+          <h3 className="text-primary text-4xl font-serif tracking-tighter sm:text-5xl lg:text-6xl">
             Personal Portfolio
           </h3>
-          <p className="text-secondary text-xl tracking-wider lg:text-2xl">
-            Custom-made personal portfolio with a modern flair and design
+          <p className="text-secondary text-xl tracking-wider sm:text-2xl">
+            Custom designed using figma and developed personal portfolio with a modern flair
           </p>
         </div>
         <div className="flex flex-col gap-5 md:gap-7">
-          <h4 className="text-2xl font-serif lg:text-3xl">Tech Stack</h4>
+          <h4 className="text-2xl font-serif sm:text-3xl">Tech Stack</h4>
           <TechStackList />
         </div>
         <div className="flex flex-col gap-5 md:gap-7">
-          <h4 className="text-2xl font-serif lg:text-3xl">Website Metrics</h4>
+          <h4 className="text-2xl font-serif sm:text-3xl">Website Metrics</h4>
           <WebsiteMetricsList />
         </div>
-        <div className={`text-primary mt-5 text-center flex flex-col gap-6 items-center md:${flexRowDirection} lg:gap-7`}>
+        <div className={`text-primary mt-5 text-center flex flex-col gap-6 items-center md:${flexRowDirection} lg:gap-10`}>
           <Button variant="primary" href="https://www.google.com">
             Explore Site
           </Button>

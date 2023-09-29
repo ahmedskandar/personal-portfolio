@@ -7,7 +7,7 @@ function TechStackItem({label, icon}) {
     <li className="flex flex-col items-center gap-2">
       <FontAwesomeIcon
         icon={icon}
-        className="w-9 h-9 p-2 text-primary bg-gold rounded-full sm:w-11 sm:h-11 sm:p-3 md:hover:scale-110 md:transition md:duration-100"
+        className="w-9 h-9 p-2 text-primary bg-gold rounded-full lg:w-11 lg:h-11 sm:p-3 md:hover:scale-110 md:transition md:duration-100"
       />
       <span className="text-secondary">{label}</span>
     </li>

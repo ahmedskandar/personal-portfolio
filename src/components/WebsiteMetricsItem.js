@@ -9,10 +9,10 @@ function WebsiteMetricsItem({ metrics }) {
       {label !== "Tailwind" ? (
         <FontAwesomeIcon
           icon={icon}
-          className="w-9 h-9 p-2 text-primary bg-gold rounded-full sm:w-11 sm:h-11 sm:p-3 md:hover:scale-110 md:transition md:duration-100"
+          className="w-9 h-9 p-2 text-primary bg-gold rounded-full lg:w-11 lg:h-11 sm:p-3 md:hover:scale-110 md:transition md:duration-100"
         />
       ) : (
-        <Icon className="p-2 text-primary bg-gold rounded-full w-[32.5px] h-[32.5px] sm:w-[42.5px] sm:h-[42.5px] md:hover:scale-110 md:transition md:duration-100" />
+        <Icon className="p-2 text-primary bg-gold rounded-full w-[32.5px] h-[32.5px] lg:w-[42.5px] lg:h-[42.5px] md:hover:scale-110 md:transition md:duration-100" />
       )}
       <span className="text-secondary">{label}</span>
       <b>{value}</b>
