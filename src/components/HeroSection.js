@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -8,12 +8,21 @@ function HeroSection() {
     words: ["<FRONT END DEVELOPER />"],
     typeSpeed: 200,
   });
-
+ useEffect(() => {
+   const setVh = () => {
+     let vh = window.innerHeight * 0.01;
+     document.documentElement.style.setProperty("--vh", `${vh}px`);
+   };
+   window.addEventListener("resize", setVh);
+   setVh();
+   return () => window.removeEventListener("resize", setVh);
+ }, []);
   return (
     <>
       <section
         alt="Dark background image displaying a mouse"
         className="w-full h-screen bg-cover bg-[100%] bg-no-repeat bg-[url('../public/assets/images/landing-page-bg.webp')] lg:bg-fixed"
+        style={{ height: "calc(var(--vh, 1vh) * 100)" }} // Add this line
       >
         <header className="relative flex flex-col gap-5 items-center justify-between md:flex-row md:relative md:px-20">
           <img
@@ -70,15 +79,21 @@ function HeroSection() {
         </div>
 
         <footer className="flex flex-col gap-5 justify-center items-center w-full absolute bottom-0 pb-10 px-20 md:gap-0 md:flex-row md:justify-start">
-          <div className="order-2 flex gap-10 text-4xl md:text-3xl lg:text-3xl lg:gap-8">
+          <div className="order-2 flex gap-10 text-4xl md:text-3xl lg:gap-8">
             <span>
               <a aria-label="Visit Ahmed's LinkedIn profile" href="google.com">
-                <FontAwesomeIcon icon={faLinkedin} />
+                <FontAwesomeIcon
+                  className="md:hover:scale-110 md:transition md:duration-200"
+                  icon={faLinkedin}
+                />
               </a>
             </span>
             <span>
               <a aria-label="Visit Ahmed's GitHub profile" href="google.com">
-                <FontAwesomeIcon icon={faGithub} />
+                <FontAwesomeIcon
+                  className="md:hover:scale-110 md:transition md:duration-200"
+                  icon={faGithub}
+                />
               </a>
             </span>
           </div>

@@ -7,7 +7,7 @@ function SkillsSection() {
   return (
     <section>
       <SectionTitle>SKILLS</SectionTitle>
-      <div className="flex flex-col gap-10 w-3/4 max-w-lg mx-auto md:max-w-xl lg:flex-row lg:gap-10 lg:justify-between lg:max-w-[90rem] ">
+      <div className="flex flex-col max-w-lg gap-10 w-4/5 mx-auto md:flex-row md:justify-between md:max-w-none lg:max-w-[95rem] lg:w-4/5">
         <SkillContainer title="CORE" />
         <SkillContainer title= {title}/>
       </div>

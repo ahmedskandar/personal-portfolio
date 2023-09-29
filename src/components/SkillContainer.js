@@ -49,7 +49,7 @@ function SkillContainer({ title }) {
     <div
       className={`${
         isCore ? "bg-gold" : "border border-[#B8860B] border-opacity-70"
-      } text-white px-20 py-16 rounded-2xl md:py-20 lg:p-28`}
+      } text-white p-16 rounded-2xl md:px-40 md:hover:scale-110 md:transition md:duration-200 lg:p-28`}
     >
       <h3 className="text-center font-serif text-xl md:text-2xl lg:text-3xl">
         {title}

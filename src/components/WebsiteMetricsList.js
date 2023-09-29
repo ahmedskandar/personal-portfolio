@@ -31,8 +31,8 @@ function WebsiteMetricsList() {
   ];
   return (
     <ul className="flex gap-10">
-      {METRICS.map((techItem) => (
-        <WebsiteMetricsItem metrics = {techItem} />
+      {METRICS.map((techItem, index) => (
+        <WebsiteMetricsItem key={index} metrics = {techItem} />
       ))}
     </ul>
   );
