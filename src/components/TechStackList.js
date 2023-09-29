@@ -23,8 +23,8 @@ function TechStackList() {
   ];
   return (
     <ul className="flex gap-10">
-      {TECH_STACK.map((techItem) => (
-        <TechStackItem label={techItem.label} icon={techItem.icon} />
+      {TECH_STACK.map((techItem, index) => (
+        <TechStackItem key={index} label={techItem.label} icon={techItem.icon} />
       ))}
     </ul>
   );

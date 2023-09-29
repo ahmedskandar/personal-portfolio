@@ -69,10 +69,10 @@ body {
 @tailwind utilities;
 
 @layer base {
-  li a {
+  nav ul li a {
     @apply text-secondary;
   }
-  li a:hover {
+  nav ul li a:hover {
     @apply text-gold;
     font-weight: bold;
   }
