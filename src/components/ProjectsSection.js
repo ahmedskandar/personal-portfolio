@@ -1,8 +1,7 @@
 import React from "react";
-import SectionTitle from "./SectionTitle";
+import SectionTitle from "./UI/SectionTitle";
 import ProjectList from "./ProjectList";
 import FeatureItem from "./FeatureItem";
-import { faRocket } from "@fortawesome/free-solid-svg-icons";
 
 function ProjectsSection() {
   return (
@@ -10,11 +9,11 @@ function ProjectsSection() {
       <SectionTitle>PROJECTS</SectionTitle>
       {/* Projects */}
       <ProjectList />
-      <blockquote className="text-secondary text-center w-3/4 mx-auto md:text-lg lg:text-2xl">
+      <blockquote className="text-secondary text-center w-3/4 mx-auto text-lg lg:text-2xl">
         "In the world of web performance, efficiency is the currency of user
         trust" - <cite>Andy Davies, Web Performance Consultant</cite>
       </blockquote>
-      <div className="text-secondary w-4/5 text-center gap-16 mt-12 mx-auto flex flex-col md:flex-row md:justify-center md:mt-20 md:gap-10 lg:gap-16">
+      <div className="text-secondary w-4/5 text-center gap-10 mt-16 mx-auto flex flex-col sm:w-3/5 md:flex-row md:justify-center md:w-4/5 md:mt-20 md:gap-10 lg:gap-16">
         <FeatureItem
           icon="rocket"
           title="Fast"

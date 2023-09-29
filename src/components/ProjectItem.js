@@ -9,7 +9,7 @@ function ProjectItem({direction}) {
     // const buttonDirection = direction === "left" ? 
   return (
     <li
-      className={`flex flex-col gap-10 md:justify-evenly md:${flexRowDirection}`}
+      className={`flex flex-col gap-10 md:gap-20 md:justify-evenly md:${flexRowDirection}`}
     >
       <div>
         <img
@@ -35,7 +35,7 @@ function ProjectItem({direction}) {
           <h4 className="text-2xl font-serif sm:text-3xl">Website Metrics</h4>
           <WebsiteMetricsList />
         </div>
-        <div className={`text-primary mt-5 text-center flex flex-col gap-6 items-center md:${flexRowDirection} lg:gap-10`}>
+        <div className={`text-primary mt-5 text-center flex flex-col gap-6 items-center sm:flex-row md:${flexRowDirection} lg:gap-10`}>
           <Button variant="primary" href="https://www.google.com">
             Explore Site
           </Button>
