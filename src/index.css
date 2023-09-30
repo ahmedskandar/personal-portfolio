@@ -35,7 +35,7 @@ body {
 .line-before-and-after {
   content: "";
   display: inline-block;
-  width: 6rem; /* Adjust the width as needed */
+  width: 4.5rem; /* Adjust the width as needed */
   height: 0.3rem; /* Adjust the height as needed */
   background-color: #cecece; /* Your desired line color */
   vertical-align: middle;
