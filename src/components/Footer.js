@@ -6,7 +6,7 @@ function Footer() {
   return (
     <>
       <HRule className="my-14 md:hidden" />
-      <footer className="text-secondary w-4/5 mx-auto flex flex-col gap-10 md:w-11/12 md:my-40 md:flex md:flex-row md:items-center">
+      <footer className="text-secondary mb-12 w-4/5 mx-auto flex flex-col gap-10 md:w-11/12 md:my-40 md:flex md:flex-row md:items-center">
        {/* Element 1 */}
         <p className="text-center text-xl sm:text-2xl md:text-3xl md:order-2 md:basis-2/4">
           &copy; Ahmed Lukman. All rights reserved
