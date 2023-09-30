@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function FeatureItem({icon, title, description}) {
   return (
-    <div className='bg-gold p-8 rounded-2xl flex flex-col items-center gap-4 lg:p-10 lg:gap-6'>
+    <div className='bg-gold p-8 rounded-2xl flex flex-col items-center md:hover:scale-105 md:transition md:duration-200 gap-4 lg:p-10 lg:gap-6'>
       <img src={`/assets/images/${icon}.png`} className='w-20 lg:w-24' alt="" />
       <h3 className='text-primary font-serif text-3xl lg:text-4xl'>{title}</h3>
       <p className='mt-4 sm:max-w-xl text-lg md:text-xl lg:text-2xl md:max-w-none'>
