@@ -29,6 +29,7 @@ body {
     rgba(218, 165, 32, 0.7),
     rgba(184, 134, 11, 0.7)
   );
+
 }
 
 /* SECTION HEADING STYLE */
@@ -49,15 +50,18 @@ body {
 @media screen and (min-width: 480px) {
   .line-before-and-after {
     margin: 0 2rem;
-    width: 8rem;
+    width: 6rem;
   }
 }
 
 /*  md */
-/*
+
 @media screen and (min-width: 768px) {
-  
-} 
+    .line-before-and-after {
+    margin: 0 2rem;
+    width: 8rem;
+  }
+}
 
 /*  lg  */
 /* @media screen and (min-width: 976px) {

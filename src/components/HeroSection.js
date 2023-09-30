@@ -21,8 +21,8 @@ function HeroSection() {
     <>
       <section
         alt="Dark background image displaying a mouse"
-        className="w-full bg-cover bg-[100%] bg-no-repeat bg-[url('../public/assets/images/landing-page-bg.webp')] lg:bg-fixed"
-        style={{ height: "calc(var(--vh, 1vh) * 100)" }} // Add this line
+        className="w-full bg-cover bg-center bg-no-repeat bg-[url('../public/assets/images/landing-page-bg.webp')] lg:bg-fixed"
+        style={{ minHeight: "calc(var(--vh, 1vh) * 100)" }} // Add this line
       >
         <header className="relative flex flex-col gap-5 items-center justify-between md:flex-row md:relative md:px-20">
           <img

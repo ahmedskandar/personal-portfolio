@@ -48,7 +48,7 @@ function SkillContainer({ title }) {
     // But it is the design I want nonetheless
     <div
       className={`${
-        isCore ? "bg-gold" : "border border-[#B8860B] border-opacity-70"
+        isCore ? "bg-gold" : "border border-darkGold border-opacity-70"
       } text-white px-20 py-16 rounded-2xl md:px-40 md:hover:scale-105 md:transition md:duration-200 lg:py-28`}
     >
       <h3 className="text-center font-serif text-xl md:text-2xl lg:text-3xl">
