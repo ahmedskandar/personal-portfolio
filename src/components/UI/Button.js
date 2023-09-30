@@ -7,7 +7,8 @@ function Button({
   variant,
   type,
 }) {
-  const style = "py-5 text-xl rounded-lg w-full";
+  const style =
+    "py-5 text-xl rounded-lg w-full hover:scale-110 transition-all duration-300 ease-in-out";
   if (href) {
     return (
       <a
@@ -17,7 +18,7 @@ function Button({
         } ${
           variant === "secondary" &&
           "border border-[#B8860B] border-opacity-70 hover:font-bold hover:border-yellow-500 hover:shadow-sm hover:shadow-white/60"
-        } hover:scale-110 transition-all duration-300 ease-in-out sm:w-[35rem] md:w-full`}
+        } sm:w-[35rem] md:w-full`}
         href={href}
       >
         {children}
@@ -27,7 +28,7 @@ function Button({
   if (type === "submit") {
     return (
       <button
-        className={`${style} bg-gold mt-10 w-full md:w-60 lg:w-[28rem]`}
+        className={`${style} bg-gold mt-10 w-full hover:bg-yellow-500/50 md:w-60 lg:w-[28rem]`}
       >
         {children}
       </button>

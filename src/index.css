@@ -36,7 +36,7 @@ body {
 .line-before-and-after {
   content: "";
   display: inline-block;
-  width: 4.5rem; /* Adjust the width as needed */
+  width: 3.5rem; /* Adjust the width as needed */
   height: 0.3rem; /* Adjust the height as needed */
   background-color: #cecece; /* Your desired line color */
   vertical-align: middle;
@@ -79,13 +79,6 @@ body {
   nav ul li a:hover {
     @apply text-gold;
     font-weight: bold;
-  }
-
-  span a {
-    @apply text-secondary;
-  }
-  span a:hover {
-    color: white;
   }
 }
 

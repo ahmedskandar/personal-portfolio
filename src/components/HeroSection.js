@@ -1,7 +1,6 @@
 import React, {useEffect} from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import Socials from "./UI/Socials";
 
 function HeroSection() {
   const [text] = useTypewriter({
@@ -26,7 +25,7 @@ function HeroSection() {
       >
         <header className="relative flex flex-col gap-5 items-center justify-between md:flex-row md:relative md:px-20">
           <img
-            src="/assets/images/MyLogo.jpg"
+            src="/assets/images/MyLogo.png"
             className="w-40 h-40"
             alt="Ahmed Lukman's logo"
           />
@@ -35,7 +34,7 @@ function HeroSection() {
             aria-label="Main navigation"
             className="md:absolute md:left-1/2 md:transform md:-translate-x-1/2"
           >
-            <ul className="text-md tracking-wider flex gap-10 md:text-lg md:gap-15 lg:text-xl lg:gap-20">
+            <ul className="text-lg tracking-wider flex gap-10 md:text-xl md:gap-15 lg:text-2xl lg:gap-20">
               <li>
                 <a href="google.com" aria-label="View Skills">
                   Skills
@@ -65,10 +64,10 @@ function HeroSection() {
         </header>
 
         <div className="text-center w-full absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-[100%]">
-          <h1 className="font-serif text-primary mb-2 text-6xl md:text-7xl lg:text-8xl">
+          <h1 className="font-serif text-primary mb-2 text-6xl md:text-7xl lg:text-9xl">
             Ahmed Lukman
           </h1>
-          <p className="font-mono font-bold tracking-wider text-gold text-lg sm:text-xl md:text-2xl lg:text-3xl">
+          <p className="font-mono font-bold tracking-wider text-gold text-xl sm:text-2xl md:text-3xl lg:text-4xl">
             {text}
             {text !== "<FRONT END DEVELOPER />" && (
               <span className="text-yellow-600">
@@ -79,24 +78,7 @@ function HeroSection() {
         </div>
 
         <footer className="flex flex-col gap-5 justify-center items-center w-full absolute bottom-0 pb-10 px-20 md:gap-0 md:flex-row md:justify-start">
-          <div className="order-2 flex gap-10 text-4xl md:text-3xl lg:gap-8">
-            <span>
-              <a aria-label="Visit Ahmed's LinkedIn profile" href="google.com">
-                <FontAwesomeIcon
-                  className="md:hover:scale-110 md:transition md:duration-200"
-                  icon={faLinkedin}
-                />
-              </a>
-            </span>
-            <span>
-              <a aria-label="Visit Ahmed's GitHub profile" href="google.com">
-                <FontAwesomeIcon
-                  className="md:hover:scale-110 md:transition md:duration-200"
-                  icon={faGithub}
-                />
-              </a>
-            </span>
-          </div>
+          <Socials />
           <em className="text-lg text-secondary order-1 md:absolute md:left-1/2 md:transform md:-translate-x-1/2 md:text-xl lg:text-2xl">
             Elevating websites beyond design
           </em>
