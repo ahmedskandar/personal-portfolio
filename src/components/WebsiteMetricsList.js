@@ -7,7 +7,7 @@ function WebsiteMetricsList() {
     {
       label: "Performance",
       icon: faGaugeHigh,
-      value: "100",
+      value: "96",
     },
     {
       label: "Accessibility",

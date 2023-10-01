@@ -11,10 +11,10 @@ function IconItem({ label, icon, value }) {
         />
       )}
       {(!icon && label === "Tailwind") && (
-        <div className="bg-gold p-[0.55rem] lg:p-[0.85rem] rounded-full md:hover:scale-110 md:transition md:duration-100">
+        <div className="bg-gold px-[3px] py-[8px] sm:py-[10px] sm:px-[5px] lg:py-[10px] lg:px-[3px] rounded-full md:hover:scale-110 md:transition md:duration-100">
           <img
             src="/assets/images/tailwind-css.png"
-            className="h-[22px] w-[22px] lg:h-[24px] lg:w-[24px] "
+            className="h-[17px] lg:h-[21.5px] "
             alt=""
           />
         </div>
