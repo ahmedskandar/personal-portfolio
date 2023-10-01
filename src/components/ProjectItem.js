@@ -14,7 +14,7 @@ function ProjectItem({direction}) {
       <div>
         <img
           className="w-full"
-          src="/assets/images/personal-portfolio-display.png"
+          src="/assets/images/personal portfolio template.webp"
           alt=""
         />
       </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import Socials from "./UI/Socials";
 import HRule from "./UI/HRule";
+import MyLogo from "./MyLogo";
 
 function Footer() {
   return (
@@ -13,11 +14,7 @@ function Footer() {
         </p>
         {/* Element 2 */}
         <div className="flex flex-col items-center text-center md:order-1 md:basis-1/4">
-          <img
-            src="/assets/images/MyLogo.png"
-            className="w-40 h-40"
-            alt="Ahmed Lukman's logo"
-          />
+          <MyLogo />
           <p className="text-xl sm:text-2xl md:text-3xl">
             Tech enthusiast, perpetual learner, minimalist coder and a creative
             problem solver

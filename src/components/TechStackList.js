@@ -2,12 +2,16 @@ import React from "react";
 import {
   faCss3Alt,
   faHtml5,
-  faSquareJs,
+  faReact
 } from "@fortawesome/free-brands-svg-icons";
-import TechStackItem from "./TechStackItem";
+import IconItem from "./UI/IconItem.js";
 
 function TechStackList() {
   const TECH_STACK = [
+    {
+      label: "React JS",
+      icon: faReact,
+    },
     {
       label: "HTML5",
       icon: faHtml5,
@@ -17,14 +21,13 @@ function TechStackList() {
       icon: faCss3Alt,
     },
     {
-      label: "JavaScript",
-      icon: faSquareJs,
+      label: "Tailwind",
     },
   ];
   return (
     <ul className="flex gap-10">
       {TECH_STACK.map((techItem, index) => (
-        <TechStackItem key={index} label={techItem.label} icon={techItem.icon} />
+        <IconItem key={index} label={techItem.label} icon={techItem.icon} />
       ))}
     </ul>
   );

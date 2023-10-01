@@ -1,34 +1,31 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Socials from "./UI/Socials";
+import MyLogo from "./MyLogo";
 
 function HeroSection() {
   const [text] = useTypewriter({
     words: ["<FRONT END DEVELOPER />"],
     typeSpeed: 200,
   });
- useEffect(() => {
-   const setVh = () => {
-     let vh = window.innerHeight * 0.01;
-     document.documentElement.style.setProperty("--vh", `${vh}px`);
-   };
-   window.addEventListener("resize", setVh);
-   setVh();
-   return () => window.removeEventListener("resize", setVh);
- }, []);
+  useEffect(() => {
+    const setVh = () => {
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty("--vh", `${vh}px`);
+    };
+    window.addEventListener("resize", setVh);
+    setVh();
+    return () => window.removeEventListener("resize", setVh);
+  }, []);
   return (
     <>
       <section
         alt="Dark background image displaying a mouse"
-        className="w-full bg-cover bg-[100%] bg-no-repeat bg-[url('../public/assets/images/landing-page-bg.webp')] md:bg-fixed"
+        className="w-full bg-cover bg-[100%] bg-no-repeat bg-[url('../public/assets/images/landing-page-mobile.webp')] md:bg-[url('../public/assets/images/landing-page-bg.webp')] md:bg-fixed"
         style={{ minHeight: "calc(var(--vh, 1vh) * 100)" }} // Add this line
       >
         <header className="relative flex flex-col gap-5 items-center justify-between md:flex-row md:relative md:px-20">
-          <img
-            src="/assets/images/MyLogo.png"
-            className="w-40 h-40"
-            alt="Ahmed Lukman's logo"
-          />
+          <MyLogo />
           <nav
             role="navigation"
             aria-label="Main navigation"

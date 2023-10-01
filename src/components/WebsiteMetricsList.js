@@ -1,38 +1,34 @@
 import React from "react";
-import {
-  faCss3Alt,
-  faHtml5,
-  faReact,
-  
-} from "@fortawesome/free-brands-svg-icons";
-import WebsiteMetricsItem from "./WebsiteMetricsItem";
+import IconItem from "./UI/IconItem";
+import { faGaugeHigh, faWheelchair, faMedal, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 function WebsiteMetricsList() {
   const METRICS = [
     {
-      label: "React",
-      icon: faReact,
-      value: "100"
+      label: "Performance",
+      icon: faGaugeHigh,
+      value: "100",
     },
     {
-      label: "HTML5",
-      icon: faHtml5,
-      value: "100"
+      label: "Accessibility",
+      icon: faWheelchair,
+      value: "100",
     },
     {
-      label: "CSS3",
-      icon: faCss3Alt,
-      value: "100"
+      label: "Best Practices",
+      icon: faMedal,
+      value: "100",
     },
     {
-      label: "Tailwind",
-      value: "100"
+      label: "SEO",
+      icon: faMagnifyingGlass,
+      value: "100",
     },
   ];
   return (
     <ul className="flex gap-10">
-      {METRICS.map((techItem, index) => (
-        <WebsiteMetricsItem key={index} metrics = {techItem} />
+      {METRICS.map(({ icon, label, value }, index) => (
+        <IconItem key={index} label={label} icon={icon} value={value} />
       ))}
     </ul>
   );

@@ -3,8 +3,10 @@ import SkillItem from "./SkillItem";
 import {
   faCss3Alt,
   faHtml5,
+  faReact,
   faSquareJs,
 } from "@fortawesome/free-brands-svg-icons";
+
 
 const CORE_ICONS = [
   {
@@ -24,7 +26,7 @@ const CORE_ICONS = [
 const OTHER_ICONS = [
   {
     label: "React JS",
-    icon: faHtml5,
+    icon: faReact,
   },
   {
     label: "Next JS",
@@ -32,11 +34,9 @@ const OTHER_ICONS = [
   },
   {
     label: "Tailwind CSS",
-    icon: faSquareJs,
   },
   {
     label: "Material UI",
-    icon: faSquareJs,
   },
 ];
 
@@ -49,7 +49,7 @@ function SkillContainer({ title }) {
     <div
       className={`${
         isCore ? "bg-gold" : "border border-darkGold border-opacity-70"
-      } text-white px-20 py-16 rounded-2xl md:px-40 md:hover:scale-105 md:transition md:duration-200 lg:py-28`}
+      } text-white px-20 py-16 rounded-2xl md:px-40 md:hover:scale-105 md:transition md:duration-200 lg:p-28`}
     >
       <h3 className="text-center font-serif text-xl md:text-2xl lg:text-3xl">
         {title}
