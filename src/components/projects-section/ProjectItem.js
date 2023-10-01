@@ -1,17 +1,17 @@
 import React from 'react'
 import TechStackList from "./TechStackList";
 import WebsiteMetricsList from "./WebsiteMetricsList";
-import Button from "./UI/Button";
+import Button from "../UI/Button";
 
 function ProjectItem({direction}) {
     const flexRowDirection =
       direction === "left" ? "flex-row md:flex-row-reverse" : "flex-row";
     // const buttonDirection = direction === "left" ? 
   return (
-    <li
-      
-    >
-      <div className={`flex flex-col gap-10 md:gap-20 md:justify-evenly md:${flexRowDirection}`}>
+    <li>
+      <div
+        className={`flex flex-col gap-10 md:gap-20 lg:gap-48 md:${flexRowDirection}`}
+      >
         <div>
           <img
             className="w-full"
@@ -53,7 +53,7 @@ function ProjectItem({direction}) {
           </div>
         </div>
       </div>
-        <hr className="border border-secondary/40 my-16 md:my-20 lg:my-32" />
+      <hr className="border border-secondary/40 my-16 md:my-20 lg:my-32" />
     </li>
   );
 }

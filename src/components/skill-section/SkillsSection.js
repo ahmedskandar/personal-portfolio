@@ -1,5 +1,5 @@
 import React from "react";
-import SectionTitle from "./UI/SectionTitle";
+import SectionTitle from "../UI/SectionTitle";
 import SkillContainer from "./SkillContainer";
 
 function SkillsSection() {

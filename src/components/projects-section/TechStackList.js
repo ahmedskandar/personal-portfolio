@@ -4,7 +4,7 @@ import {
   faHtml5,
   faReact
 } from "@fortawesome/free-brands-svg-icons";
-import IconItem from "./UI/IconItem.js";
+import IconItem from "../UI/IconItem.js";
 
 function TechStackList() {
   const TECH_STACK = [

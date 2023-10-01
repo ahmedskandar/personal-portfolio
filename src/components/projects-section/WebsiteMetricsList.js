@@ -1,5 +1,5 @@
 import React from "react";
-import IconItem from "./UI/IconItem";
+import IconItem from "../UI/IconItem";
 import { faGaugeHigh, faWheelchair, faMedal, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 function WebsiteMetricsList() {
@@ -7,7 +7,7 @@ function WebsiteMetricsList() {
     {
       label: "Performance",
       icon: faGaugeHigh,
-      value: "96",
+      value: "100",
     },
     {
       label: "Accessibility",
@@ -22,7 +22,7 @@ function WebsiteMetricsList() {
     {
       label: "SEO",
       icon: faMagnifyingGlass,
-      value: "100",
+      value: "91",
     },
   ];
   return (

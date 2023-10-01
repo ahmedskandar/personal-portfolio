@@ -1,9 +1,8 @@
 import React from "react";
-import SectionTitle from "./UI/SectionTitle";
-import Button from "./UI/Button";
-import Input from "./UI/Input";
-import {ReactComponent as Icon} from './icons/handshake.svg'
-import HRule from "./UI/HRule";
+import SectionTitle from "../UI/SectionTitle";
+import Button from "../UI/Button";
+import Input from "../UI/Input";
+import HRule from "../UI/HRule";
 
 function ContactMe() {
   return (
@@ -26,7 +25,7 @@ function ContactMe() {
       </form>
       <div className="absolute -z-50 w-full flex-col hidden items-end md:flex md:-right-0 -bottom-24 ">
         <img src="/assets/images/handshake.png" alt="" className="md:w-[25%]" />
-      <HRule />
+        <HRule />
       </div>
     </section>
   );

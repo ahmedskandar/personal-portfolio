@@ -20,7 +20,7 @@ function IconItem({ label, icon, value }) {
         </div>
       )}
       {(!icon && label === "MaterialUI")}
-      <span className="text-secondary">{label}</span>
+      <span className="text-secondary text-center">{label}</span>
       {value && <b>{value}</b>}
     </li>
   );

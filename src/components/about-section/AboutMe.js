@@ -1,6 +1,6 @@
 import React from "react";
-import SectionTitle from "./UI/SectionTitle";
-import { ReactComponent as Icon } from "./icons/Me.svg";
+import SectionTitle from "../UI/SectionTitle";
+import { ReactComponent as Icon } from "../icons/Me.svg";
 
 function AboutMe() {
   return (
@@ -19,7 +19,11 @@ function AboutMe() {
             through motivational speeches. My commitment to continuous learning
             and educating drives my passion as a programmer. For more details,
             please refer to my{" "}
-            <a className="underline" href="/assets/files/my-cv.pdf" download="my-cv.pdf">
+            <a
+              className="underline"
+              href="/assets/files/my-cv.pdf"
+              download="my-cv.pdf"
+            >
               resume
             </a>
             .

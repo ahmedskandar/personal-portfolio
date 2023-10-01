@@ -1,9 +1,9 @@
-import HeroSection from "./components/HeroSection";
-import SkillsSection from "./components/SkillsSection";
-import ProjectsSection from "./components/ProjectsSection";
-import AboutMe from "./components/AboutMe";
-import ContactMe from "./components/ContactMe";
-import Footer from "./components/Footer";
+import HeroSection from "./components/hero-section/HeroSection";
+import SkillsSection from "./components/skill-section/SkillsSection";
+import ProjectsSection from "./components/projects-section/ProjectsSection";
+import AboutMe from "./components/about-section/AboutMe";
+import ContactMe from "./components/contact-section/ContactMe";
+import Footer from "./components/footer-section/Footer";
 
 function App() {
   return (
