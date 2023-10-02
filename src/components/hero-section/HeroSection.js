@@ -41,7 +41,7 @@ function HeroSection() {
     <section
       alt="Dark background image displaying a mouse"
       // style={sectionStyle}
-      className="w-full h-[86vh] flex flex-col justify-between bg-cover bg-no-repeat bg-[95%] bg-[url('../public/assets/images/landing-page-mobile.webp')] md:bg-[url('../public/assets/images/landing-page-bg.webp')] md:bg-fixed md:h-screen"
+      className="w-full h-screen flex flex-col justify-between bg-cover bg-no-repeat bg-[95%] bg-[url('../public/assets/images/landing-page-mobile.webp')] md:bg-[url('../public/assets/images/landing-page-bg.webp')] md:bg-fixed"
     >
       <HeroHeader />
       <HeroContent />
