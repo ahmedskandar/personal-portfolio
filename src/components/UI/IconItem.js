@@ -4,13 +4,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function IconItem({ label, icon, value }) {
   return (
     <li className="flex flex-col items-center gap-2">
-      {(icon && (label !== "Tailwind" || "MaterialUI")) && (
+      {icon && (label !== "Tailwind" || "MaterialUI") && (
         <FontAwesomeIcon
           icon={icon}
           className="w-9 h-9 p-2 text-primary bg-gold rounded-full sm:p-3 md:hover:scale-110 md:transition md:duration-100 lg:w-11 lg:h-11 "
         />
       )}
-      {(!icon && label === "Tailwind") && (
+      {!icon && label === "Tailwind" && (
         <div className="bg-gold px-[3px] py-[8px] sm:py-[10px] sm:px-[5px] lg:py-[10px] lg:px-[3px] rounded-full md:hover:scale-110 md:transition md:duration-100">
           <img
             src="/assets/images/tailwind-css.png"
@@ -19,7 +19,17 @@ function IconItem({ label, icon, value }) {
           />
         </div>
       )}
-      {(!icon && label === "MaterialUI")}
+      {!icon && label === "Next JS" && (
+                <div className="bg-gold rounded-full md:hover:scale-110 md:transition md:duration-100">
+
+        <img
+          src="/assets/images/nextjs.png"
+          className="w-[32.5px] p-2 md:p-2 md:w-[42px]"
+          alt=""
+        />
+        </div>
+      )}
+      {/* {(!icon && label === "MaterialUI")} */}
       <span className="text-secondary text-center">{label}</span>
       {value && <b>{value}</b>}
     </li>

@@ -4,14 +4,18 @@ import { COMMON_BUTTON_STYLE } from "../../util/constants";
 function Button({
   children,
   href,
-  onClick,
   variant,
   type,
+  onSendEmail,
+  projectName
 }) {
  
   if (href) {
     return (
       <a
+        aria-label={`${
+          variant === "primary" ? "Explore " + projectName + "'s site" : "Go to " + projectName + "'s source code"
+        } `}
         className={` ${COMMON_BUTTON_STYLE} ${
           variant === "primary" &&
           "bg-gold hover:bg-yellow-500/50 hover:font-bold"
@@ -28,6 +32,7 @@ function Button({
   if (type === "submit") {
     return (
       <button
+        onClick={onSendEmail}
         className={`${COMMON_BUTTON_STYLE} bg-gold mt-10 w-full hover:bg-yellow-500/50 md:w-60 lg:w-[28rem]`}
       >
         {children}

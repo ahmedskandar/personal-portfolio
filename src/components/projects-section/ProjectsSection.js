@@ -5,7 +5,7 @@ import FeatureItem from "./FeatureItem";
 
 function ProjectsSection() {
   return (
-    <section>
+    <section id="projects">
       <SectionTitle>PROJECTS</SectionTitle>
       {/* Projects */}
       <ProjectList />

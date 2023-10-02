@@ -1,7 +1,18 @@
 {
   "short_name": "Ahmed's Portfolio",
   "name": "Ahmed's Front End Development Portfolio",
-  "icons": [],
+  "icons": [
+    {
+      "src": "img/MyLogo-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "img/MyLogo-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",

@@ -5,11 +5,11 @@ import { SECONDARY_SKILL_TITLE } from "../../util/constants";
 
 function SkillsSection() {
   return (
-    <section>
+    <section id="skills">
       <SectionTitle>SKILLS</SectionTitle>
       <div className="flex flex-col max-w-lg gap-10 w-4/5 mx-auto md:flex-row md:justify-between md:max-w-7xl lg:gap-20 lg:max-w-[97rem]">
         <SkillContainer title="CORE" />
-        <SkillContainer title= {SECONDARY_SKILL_TITLE}/>
+        <SkillContainer title={SECONDARY_SKILL_TITLE} />
       </div>
     </section>
   );
