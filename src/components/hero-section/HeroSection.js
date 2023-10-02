@@ -32,7 +32,7 @@ function HeroSection() {
       window.removeEventListener("resize", setHeight);
     };
   }, []);
-console.log(sectionHeight ? sectionHeight : "not rendered") 
+  console.log(sectionHeight ? sectionHeight : "not rendered");
   const sectionStyle = {
     height: sectionHeight,
   };
@@ -41,7 +41,7 @@ console.log(sectionHeight ? sectionHeight : "not rendered")
     <section
       alt="Dark background image displaying a mouse"
       style={sectionStyle}
-      className="w-full bg-cover bg-no-repeat bg-[95%] bg-[url('../public/assets/images/landing-page-mobile.webp')] md:bg-[url('../public/assets/images/landing-page-bg.webp')] md:bg-fixed md:h-screen"
+      className="w-full relative bg-cover bg-no-repeat bg-[95%] bg-[url('../public/assets/images/landing-page-mobile.webp')] md:bg-[url('../public/assets/images/landing-page-bg.webp')] md:bg-fixed md:h-screen"
     >
       <HeroHeader />
       <HeroContent />
