@@ -11,21 +11,21 @@ function SkillItem({ icon, label }) {
         <img
           src="/assets/images/tailwind-css.png"
           className="h-[30px] md:h-[30px] "
-          alt=""
+          alt={label + " icon"}
         />
       )}
       {!icon && label === "Material UI" && (
         <img
           src="/assets/images/material-ui.png"
           className="w-[37.5px] md:w-[45px]"
-          alt=""
+          alt={label + " icon"}
         />
       )}
       {!icon && label === "Next JS" && (
         <img
           src="/assets/images/nextjs.png"
           className="w-[37.5px] md:w-[45px]"
-          alt=""
+          alt={label + " icon"}
         />
       )}
       <span className={"text-center lg:text-xl"}>{label}</span>

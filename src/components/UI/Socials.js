@@ -27,7 +27,7 @@ function Socials({location}) {
         <FontAwesomeIcon
           className="md:hover:scale-110 md:transition md:duration-200 hover:text-primary"
           icon={faGithub}
-          title="Github"
+          title="Github" //Add this in case of button icon
         />
       </a>
     </div>

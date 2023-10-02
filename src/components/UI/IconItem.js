@@ -15,18 +15,17 @@ function IconItem({ label, icon, value }) {
           <img
             src="/assets/images/tailwind-css.png"
             className="h-[17px] lg:h-[21.5px] "
-            alt=""
+            alt={label + " icon"}
           />
         </div>
       )}
       {!icon && label === "Next JS" && (
-                <div className="bg-gold rounded-full md:hover:scale-110 md:transition md:duration-100">
-
-        <img
-          src="/assets/images/nextjs.png"
-          className="w-[32.5px] p-2 md:p-2 md:w-[42px]"
-          alt=""
-        />
+        <div className="bg-gold rounded-full md:hover:scale-110 md:transition md:duration-100">
+          <img
+            src="/assets/images/nextjs.png"
+            className="w-[32.5px] p-2 md:p-2 md:w-[42px]"
+            alt={label + " icon"}
+          />
         </div>
       )}
       {/* {(!icon && label === "MaterialUI")} */}

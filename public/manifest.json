@@ -3,12 +3,12 @@
   "name": "Ahmed's Front End Development Portfolio",
   "icons": [
     {
-      "src": "img/MyLogo-192.png",
+      "src": "./assets/images/favicons/MyLogo-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "img/MyLogo-512.png",
+      "src": "./assets/images/favicons/MyLogo-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }

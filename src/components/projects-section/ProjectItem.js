@@ -12,7 +12,7 @@ function ProjectItem({direction, techStack, metrics, description, heading, image
         className={`flex flex-col gap-10 md:gap-20 lg:gap-48 md:${direction}`}
       >
         <div className='basis-1/2'>
-          <img className="w-full" src={imageSrc} alt="" />
+          <img className="w-full" src={imageSrc} alt={heading + " project image"} />
         </div>
         <figcaption className="text-primary basis-1/2 flex flex-col gap-10 lg:gap-14">
           <div className="flex flex-col gap-2">
