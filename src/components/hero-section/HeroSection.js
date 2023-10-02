@@ -18,7 +18,7 @@ function HeroSection() {
       const approxTopBarHeight = screenAvailableHeight - windowHeight;
 
       // Set the section height, subtracting an approximation of the top bar height
-      setSectionHeight(`calc(100vh - ${approxTopBarHeight}px + 15px)`);
+      setSectionHeight(`calc(100vh - ${approxTopBarHeight}px + 25px)`);
     };
 
     // Initial call to set the height
