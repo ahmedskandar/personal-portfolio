@@ -4,13 +4,13 @@ import WebsiteMetricsList from "./WebsiteMetricsList";
 import Button from "../UI/Button";
 
 function ProjectItem({direction}) {
-    const flexRowDirection =
-      direction === "left" ? "flex-row md:flex-row-reverse" : "flex-row";
-    // const buttonDirection = direction === "left" ? 
+
   return (
     <li>
       <div
-        className={`flex flex-col gap-10 md:gap-20 lg:gap-48 md:${flexRowDirection}`}
+        className={`flex flex-col gap-10 md:gap-20 lg:gap-48 md:${
+          direction
+        }`}
       >
         <div>
           <img
@@ -42,7 +42,9 @@ function ProjectItem({direction}) {
             <WebsiteMetricsList />
           </div>
           <div
-            className={`text-primary mt-5 text-center flex flex-col gap-6 items-center sm:flex-row md:${flexRowDirection} lg:gap-10`}
+            className={`text-primary mt-5 text-center flex flex-col gap-6 items-center sm:flex-row md:${
+              direction
+            } lg:gap-10`}
           >
             <Button variant="primary" href="https://www.google.com">
               Explore Site

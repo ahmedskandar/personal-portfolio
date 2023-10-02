@@ -1,48 +1,11 @@
 import React from "react";
 import SkillItem from "./SkillItem";
-import {
-  faCss3Alt,
-  faHtml5,
-  faReact,
-  faSquareJs,
-} from "@fortawesome/free-brands-svg-icons";
+import { CORE_SKILL_ICONS, OTHER_SKILL_ICONS } from "../../util/constants";
 
-
-const CORE_ICONS = [
-  {
-    label: "HTML5",
-    icon: faHtml5,
-  },
-  {
-    label: "CSS3",
-    icon: faCss3Alt,
-  },
-  {
-    label: "JavaScript",
-    icon: faSquareJs,
-  },
-];
-
-const OTHER_ICONS = [
-  {
-    label: "React JS",
-    icon: faReact,
-  },
-  {
-    label: "Next JS",
-    icon: faCss3Alt,
-  },
-  {
-    label: "Tailwind CSS",
-  },
-  {
-    label: "Material UI",
-  },
-];
 
 function SkillContainer({ title }) {
   let isCore = title === "CORE";
-  let icons = isCore ? CORE_ICONS : OTHER_ICONS;
+  let icons = isCore ? CORE_SKILL_ICONS : OTHER_SKILL_ICONS;
   return (
     // I am not sure why the Core Skill container is given the same height as the Framework container height
     // But it is the design I want nonetheless

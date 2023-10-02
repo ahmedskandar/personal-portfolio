@@ -1,4 +1,5 @@
 import React from "react";
+import { COMMON_BUTTON_STYLE } from "../../util/constants";
 
 function Button({
   children,
@@ -7,12 +8,11 @@ function Button({
   variant,
   type,
 }) {
-  const style =
-    "py-5 text-xl rounded-lg w-full hover:scale-110 transition-all duration-300 ease-in-out";
+ 
   if (href) {
     return (
       <a
-        className={` ${style} ${
+        className={` ${COMMON_BUTTON_STYLE} ${
           variant === "primary" &&
           "bg-gold hover:bg-yellow-500/50 hover:font-bold"
         } ${
@@ -28,7 +28,7 @@ function Button({
   if (type === "submit") {
     return (
       <button
-        className={`${style} bg-gold mt-10 w-full hover:bg-yellow-500/50 md:w-60 lg:w-[28rem]`}
+        className={`${COMMON_BUTTON_STYLE} bg-gold mt-10 w-full hover:bg-yellow-500/50 md:w-60 lg:w-[28rem]`}
       >
         {children}
       </button>

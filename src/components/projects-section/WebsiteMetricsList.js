@@ -1,33 +1,12 @@
 import React from "react";
 import IconItem from "../UI/IconItem";
-import { faGaugeHigh, faWheelchair, faMedal, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { LIGHTHOUSE_METRICS } from "../../util/constants";
 
 function WebsiteMetricsList() {
-  const METRICS = [
-    {
-      label: "Performance",
-      icon: faGaugeHigh,
-      value: "100",
-    },
-    {
-      label: "Accessibility",
-      icon: faWheelchair,
-      value: "100",
-    },
-    {
-      label: "Best Practices",
-      icon: faMedal,
-      value: "100",
-    },
-    {
-      label: "SEO",
-      icon: faMagnifyingGlass,
-      value: "91",
-    },
-  ];
+
   return (
     <ul className="flex gap-10">
-      {METRICS.map(({ icon, label, value }, index) => (
+      {LIGHTHOUSE_METRICS.map(({ icon, label, value }, index) => (
         <IconItem key={index} label={label} icon={icon} value={value} />
       ))}
     </ul>
