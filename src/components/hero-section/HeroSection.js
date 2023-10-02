@@ -18,14 +18,14 @@ function HeroSection() {
       const approxTopBarHeight = screenAvailableHeight - windowHeight;
 
       // Set the section height, subtracting an approximation of the top bar height
-      setSectionHeight(`calc(100vh)`);
+      setSectionHeight(`calc(100vh - ${approxTopBarHeight}px + 5.5vh)`);
     };
 
     // Initial call to set the height
     setHeight();
   }, []);
   const sectionStyle = {
-    height: sectionHeight,
+    height: '100svh',
   };
 
   return (
