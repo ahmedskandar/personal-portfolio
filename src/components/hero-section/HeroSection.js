@@ -1,29 +1,29 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import HeroHeader from "./HeroHeader";
 import HeroFooter from "./HeroFooter";
 import HeroContent from "./HeroContent";
 
 function HeroSection() {
-  const [sectionHeight, setSectionHeight] = useState("100vh");
+  // const [sectionHeight, setSectionHeight] = useState("100vh");
 
-  useEffect(() => {
-    // Function to calculate and set the section's height
-    const setHeight = () => {
-      const windowHeight =
-        window.innerHeight ||
-        document.documentElement.clientHeight ||
-        document.body.clientHeight;
-      const screenAvailableHeight =
-        window.screen.availHeight || window.screen.height;
-      const approxTopBarHeight = screenAvailableHeight - windowHeight;
+  // useEffect(() => {
+  //   // Function to calculate and set the section's height
+  //   const setHeight = () => {
+  //     const windowHeight =
+  //       window.innerHeight ||
+  //       document.documentElement.clientHeight ||
+  //       document.body.clientHeight;
+  //     const screenAvailableHeight =
+  //       window.screen.availHeight || window.screen.height;
+  //     const approxTopBarHeight = screenAvailableHeight - windowHeight;
 
-      // Set the section height, subtracting an approximation of the top bar height
-      setSectionHeight(`calc(100vh - ${approxTopBarHeight}px + 5.5vh)`);
-    };
+  //     // Set the section height, subtracting an approximation of the top bar height
+  //     setSectionHeight(`calc(100vh - ${approxTopBarHeight}px + 5.5vh)`);
+  //   };
 
-    // Initial call to set the height
-    setHeight();
-  }, []);
+  //   // Initial call to set the height
+  //   setHeight();
+  // }, []);
   const sectionStyle = {
     height: '100svh',
   };
