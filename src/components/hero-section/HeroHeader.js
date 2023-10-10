@@ -9,7 +9,7 @@ function HeroHeader() {
         aria-label="Main navigation"
         className="md:absolute md:left-1/2 md:transform md:-translate-x-1/2"
       >
-        <ul className="text-lg tracking-wider flex gap-10 md:text-xl md:gap-15 lg:text-2xl lg:gap-20">
+        <ul className="text-lg scroll-smooth tracking-wider flex gap-10 md:text-xl md:gap-15 lg:text-2xl lg:gap-20">
           <li>
             <a href="#skills" aria-label="View Skills">
               Skills
